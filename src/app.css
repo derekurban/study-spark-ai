@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply input input-bordered;
+}
+
+input[type="file"]{
+padding: 0px;
+}
+
+textarea {
+  @apply textarea textarea-bordered;
+}
+
+@layer base{
+  .bg-gradient-primary-secondary{
+    @apply bg-clip-text text-transparent bg-gradient-to-tr from-primary to-secondary saturate-200;
+  }
+  .bg-gradient-primary-accent{
+    @apply bg-clip-text text-transparent bg-gradient-to-tr from-primary to-accent saturate-200;
+  }
+}
